@@ -1,0 +1,108 @@
+body {
+  background-color: #df7861;
+  font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+  font-size: 19px;
+  text-decoration: underline;
+}
+
+input {
+  background-color: white;
+  border-radius: 4px;
+  color: #df7861;
+  transition: ease-in-out;
+  padding: 10px;
+  border-width: 0px;
+}
+
+.button-1 {
+  background-color: #d4e2d4;
+  border-radius: 4px;
+  color: #df7861;
+  transition: ease-in-out;
+  padding: 10px;
+  border-width: 0px;
+  margin-left: 8px;
+}
+
+.afterSearch {
+  margin: 0 auto;
+  background-color: #fcf8e8;
+  text-align: center;
+  color: #df7861;
+  padding-bottom: 7px;
+  margin: 0 auto;
+  max-width: 940px;
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #df7861;
+  background-color: #ecb390;
+  font-weight: 900;
+  color: #fcf8e8;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.dateformat {
+  font-size: 10px;
+  padding-top: 15px;
+}
+
+.description {
+  text-align: center;
+  font-size: 55px;
+}
+
+.temperature {
+  text-align: center;
+  font-size: 55px;
+}
+
+.unit {
+  text-align: center;
+}
+
+.forecast {
+  background-color: #fcf8e8;
+  text-align: center;
+  color: #df7861;
+  padding-bottom: 7px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.dateformat {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+  --bs-gutter-y: 0;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.container {
+  --bs-gutter-x: 0em;
+}
+
+.search-button {
+  margin-left: 30px;
+  padding-right: 30px;
+  background-color: #d4e2d4;
+  float: right;
+}
