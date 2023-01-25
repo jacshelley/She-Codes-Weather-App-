@@ -30,8 +30,13 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  let windElement = document.querySelector("#wind");
 
-  celsiusTemperature = response.data.main.temp;
+celsiusTemperature = response.data.main.temp;
+
+windElement.innerHTML = "Wind speed is " + Math.round(response.data.wind.speed)+ " km/h";
+humidityElement.innerHTML = "Humidity is at " + Math.round(response.data.wind.speed)+ " %";
+
 
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
