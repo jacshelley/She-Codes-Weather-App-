@@ -17,6 +17,17 @@ input {
   border-width: 0px;
 }
 
+.search-button {
+  margin-left: 30px;
+  padding-right: 30px;
+  background-color: #d4e2d4;
+  float: right;
+}
+
+.search-button:hover {
+  background-color: white;
+}
+
 .button-1 {
   background-color: #d4e2d4;
   border-radius: 4px;
@@ -25,6 +36,10 @@ input {
   padding: 10px;
   border-width: 0px;
   margin-left: 8px;
+}
+
+.button-1:hover {
+  background-color: white;
 }
 
 .celcius {
@@ -38,6 +53,10 @@ input {
   margin-right: 8px;
 }
 
+.celcius:hover {
+  background-color: white;
+}
+
 .fahrenheit {
   Float:left;
   background-color: #d4e2d4;
@@ -48,9 +67,13 @@ input {
   border-width: 0px;
 }
 
+.fahrenheit:hover {
+  background-color: white;
+}
+
 .afterSearch {
   margin: 0 auto;
-  background-color: #fcf8e8;
+  background-color: #fcf8e8d2;
   text-align: center;
   color: #df7861;
   padding-bottom: 7px;
@@ -97,7 +120,7 @@ h1 {
 }
 
 .forecast {
-  background-color: #fcf8e8;
+  background-color: #fcf8e8d2;
   text-align: center;
   color: #df7861;
   padding-bottom: 7px;
@@ -129,12 +152,6 @@ h2 {
   --bs-gutter-x: 0em;
 }
 
-.search-button {
-  margin-left: 30px;
-  padding-right: 30px;
-  background-color: #d4e2d4;
-  float: right;
-}
 
 footer {
   font-size: 10px;
