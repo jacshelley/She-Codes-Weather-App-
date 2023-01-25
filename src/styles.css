@@ -27,6 +27,27 @@ input {
   margin-left: 8px;
 }
 
+.celcius {
+  Float:right;
+  background-color: #d4e2d4;
+  border-radius: 4px;
+  color: #df7861;
+  transition: ease-in-out;
+  padding: 10px;
+  border-width: 0px;
+  margin-right: 10px;
+}
+
+.fahrenheit {
+  Float:left;
+  background-color: #d4e2d4;
+  border-radius: 4px;
+  color: #df7861;
+  transition: ease-in-out;
+  padding: 10px;
+  border-width: 0px;
+}
+
 .afterSearch {
   margin: 0 auto;
   background-color: #fcf8e8;
@@ -56,7 +77,14 @@ h1 {
 
 .description {
   text-align: center;
-  font-size: 55px;
+  font-size: 10px;
+  padding-bottom: 20px;
+}
+
+.feelsLike {
+  text-align: center;
+  font-size: 10px;
+  padding-bottom: 20px;
 }
 
 .temperature {
