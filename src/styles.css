@@ -35,7 +35,7 @@ input {
   transition: ease-in-out;
   padding: 10px;
   border-width: 0px;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .fahrenheit {
@@ -103,6 +103,7 @@ h1 {
   padding-bottom: 7px;
   max-width: 940px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -133,4 +134,8 @@ h2 {
   padding-right: 30px;
   background-color: #d4e2d4;
   float: right;
+}
+
+footer {
+  font-size: 10px;
 }
