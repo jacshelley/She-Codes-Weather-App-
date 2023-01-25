@@ -122,7 +122,9 @@ h1 {
 
 .temperature {
   text-align: center;
-  font-size: 55px;
+  vertical-align: bottom;
+  font-size: 54px;
+  font-weight: 600;
 }
 
 .unit {
@@ -185,4 +187,9 @@ color: #df7861;
 
 a:active{
 text-decoration: none;
+}
+
+img { 
+  max-width: 90px;
+  margin: auto 0
 }
