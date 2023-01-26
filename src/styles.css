@@ -29,21 +29,11 @@ input {
 }
 
 .button-1 {
-  background-color: #d4e2d4;
-  border-radius: 4px;
   color: #df7861;
-  transition: ease-in-out;
-  padding: 10px;
-  border-width: 0px;
-  margin-left: 8px;
 }
 
-.button-1:hover {
-  background-color: white;
-}
-
-.celcius{
-  Float:right;
+.celcius {
+  float: right;
   background-color: #d4e2d4;
   border-radius: 4px;
   color: #df7861;
@@ -58,9 +48,8 @@ input {
   background-color: white;
 }
 
-
-.fahrenheit{
-  Float:left;
+.fahrenheit {
+  float: left;
   background-color: #d4e2d4;
   border-radius: 4px;
   color: #df7861;
@@ -69,16 +58,14 @@ input {
   border-width: 0px;
   margin-right: 8px;
   --bs-link-color: #df7861;
-  
 }
 
 .fahrenheit:hover {
   background-color: white;
 }
 
-
 .unit {
-font-size: 12px;
+  font-size: 12px;
 }
 
 .afterSearch {
@@ -112,7 +99,7 @@ h1 {
   text-align: center;
   font-size: 12px;
   margin-top: -10px;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 
 .wind {
@@ -142,10 +129,10 @@ h1 {
 .forecast {
   text-align: center;
   color: #df7861;
-  padding-bottom: 7px;
+  padding-bottom: 0px;
   max-width: 940px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
@@ -172,7 +159,6 @@ h2 {
   --bs-gutter-x: 0em;
 }
 
-
 footer {
   font-size: 10px;
   background-color: #df7861;
@@ -182,23 +168,23 @@ footer {
 }
 
 a:link {
-text-decoration: none;
+  text-decoration: none;
 }
 
 a:visited {
-text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-text-decoration: none;
-color: #df7861;
+  text-decoration: none;
+  color: #df7861;
 }
 
-a:active{
-text-decoration: none;
+a:active {
+  text-decoration: none;
 }
 
-img { 
+img {
   max-width: 90px;
-  margin: auto 0
+  margin: auto 0;
 }

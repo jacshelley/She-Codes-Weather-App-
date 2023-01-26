@@ -69,6 +69,25 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
+
+function searchLocation(position) {
+  let apiKey = "9cf65943a9c1785ac2035257ac1cc8c4";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
+function displayWeatherCondition(response) {
+  document.querySelector("#city").innerHTML = response.data.name;
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiKey = "9cf65943a9c1785ac2035257ac1cc8c4";
@@ -92,7 +111,7 @@ function displayTemperature(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = "Humidity is " + (response.data.main.humidity) + " %";
   windElement.innerHTML = "Wind is " + Math.round(response.data.wind.speed) + " km/hr";
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  dateElement.innerHTML = "Last Updated on " + formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -136,6 +155,7 @@ let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
